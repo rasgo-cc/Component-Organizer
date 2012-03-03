@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/page_white_add.png</file>
+        <file>img/page_white_delete.png</file>
+        <file>img/page_white_edit.png</file>
+        <file>img/page_white_star.png</file>
+        <file>img/page_white_text.png</file>
+        <file>img/package_add.png</file>
+        <file>img/package_delete.png</file>
+        <file>img/chip.png</file>
+        <file>img/bullet_star.png</file>
+        <file>img/chip_64x64.png</file>
+        <file>img/container.png</file>
+        <file>img/container_add.png</file>
+        <file>img/container_delete.png</file>
+        <file>img/label_add.png</file>
+        <file>img/label_delete.png</file>
+        <file>img/manufacturer.png</file>
+        <file>img/manufacturer_add.png</file>
+        <file>img/manufacturer_delete.png</file>
+        <file>img/label.png</file>
+        <file>img/package.png</file>
+        <file>img/config.png</file>
+    </qresource>
+</RCC>

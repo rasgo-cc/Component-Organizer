@@ -1,0 +1,5 @@
+Makefile*
+TESTE/
+_build/
+object_script.*
+*.pro.user
