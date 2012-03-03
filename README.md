@@ -1,7 +1,7 @@
 Introduction
 ============
 
-Component Organizer (or CO for short) is a small, cross-platform and very easy to use application targeted at all those people who have electronics as (at least) an hobby. It's main purpose is to avoid to google for the same datasheet hundreds of times or "hey I know I already downloaded that datasheet but I can't find it now on my computer", so you spend less time gathering information and have more time to look at the hardware which off course is the best part :-). With Component Organizer you can easily search and manage your datasheets and application notes. You can as well manage your component's stock and be alerted when it's on low stock or without sock. A component can be an amplifier, a microcontroller, but also a development board, a compiler... All those things that have an heavy document describing it's features and/or how it works. It doesn't require installation and so it's very portable. You can use it in a PEN drive or with Dropbox allowing your data to be always acessible.
+Component Organizer (or CO for short) is a small, cross-platform and very easy to use application targeted at all those people who have electronics as (at least) an hobby. It's main purpose is to avoid to google for the same datasheet hundreds of times or "hey I know I already downloaded that datasheet but I can't find it now on my computer", so you spend less time gathering information and have more time to look at the hardware which off course is the best part :-). With Component Organizer you can easily search and manage your datasheets and application notes. You can as well manage your component's stock and be alerted when it's on low stock or without stock. A component can be an amplifier, a microcontroller, but also a development board, a compiler... All those things that have an heavy document describing it's features and/or how it works. It doesn't require installation and so it's very portable. You can use it in a PEN drive or with Dropbox allowing your data to be always acessible.
 
 Official webpage: http://3xdigital.com/projects/comporg/
 
@@ -13,7 +13,7 @@ The tools used for development:
 QtCreator (2.4.1)
 Qt (4.7.4)
 
-The easiest way to build CO is by using QtCreator IDE. Download it, and Qt 4.7.4, from Qt's website (http://qt.nokia.com/). Then:
+The easiest way to build CO is by using QtCreator IDE. Download it and Qt 4.7.4 from Qt's website (http://qt.nokia.com/). Then:
 
 1) Run QtCreator
 
