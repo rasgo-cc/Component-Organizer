@@ -57,8 +57,6 @@ OptionsDialog::~OptionsDialog()
 
 void OptionsDialog::setup()
 {
-    QSettings settings;
-
     setWindowTitle(tr("Settings"));
     setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint);
 
@@ -357,7 +355,10 @@ void OptionsDialog::addSecondaryLabelHandler()
     m_secondaryLabelTable->insertRow(row);
     m_secondaryLabelTable->addItem(row, 0, name);
 
-    Label *topLabel = m_co->findTopLabel(ui->primaryLabel_lineEdit->text());
+    row = m_primaryLabelTable->currentRow();
+    QString topLabelName = m_primaryLabelTable->item(row,0)->text();
+    Label *topLabel = m_co->findTopLabel(topLabelName);
+    qDebug() << topLabel << (topLabel == 0);
     Label *leaf = new Label(name, topLabel);
     topLabel->addLeaf(leaf);
 }

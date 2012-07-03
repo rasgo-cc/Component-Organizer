@@ -149,9 +149,9 @@ void ComponentTable::fillRow(int row, Component *component)
         link = component;
 
     if(link->defaultDatasheet() == 0)
-        view->setText("n/a");
+        viewButton->setText("n/a");
     else
-        view->setText("view");
+        viewButton->setText("view");
 
     viewButton->setNumber(row);
     connect(viewButton, SIGNAL(pressed()), this, SLOT(updateSelectedRowFromToolButton()));

@@ -69,7 +69,7 @@ private:
 
     CO *m_co;
 
-    enum MaxWidth { ColumnMaxWidth = 220 };
+    enum MaxWidth { ColumnMaxWidth = 250 };
 
     void setup();
 };

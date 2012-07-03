@@ -36,6 +36,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "applicationnote.h"
 #include "label.h"
 
+#include <QDateTime>
 #include <QMessageBox>
 #include <QSettings>
 #include <QDir>
@@ -392,12 +393,19 @@ void MainWindow::updateXML()
     ui->statusBar->showMessage(tr("Updated"), 500);
 }
 
+#include <QTextEdit>
 void MainWindow::about()
 {
     QString text;
-    text.append("Component Organizer");
-    text.append("\nversion: " + CO_VERSION);
-    text.append("\n3xdigital.com");
+
+    text.append("Component Organizer " + CO_VERSION);
+    text.append("\nBuilt with Qt " + QString(QT_VERSION_STR) + " ");
+    text.append("(" + QDateTime::currentDateTime().toString("dd/MM/yyyy") + ")");
+    text.append("\n");
+    text.append("\nThis is OPEN SOURCE software.\nFeel free to contribute!");
+    text.append("\n");
+    text.append("\n3xbla.wordpress.com/component-organizer/");
+    text.append("\ngithub.com/3xdigital/Component-Organizer");
 
     QMessageBox::about(this, "About", text);
 }

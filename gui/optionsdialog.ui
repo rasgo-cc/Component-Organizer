@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>332</width>
-    <height>196</height>
+    <width>384</width>
+    <height>218</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -123,25 +123,12 @@
              <item>
               <widget class="QLineEdit" name="container_lineEdit">
                <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
               </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_2">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>5</width>
-                 <height>15</height>
-                </size>
-               </property>
-              </spacer>
              </item>
              <item>
               <widget class="QToolButton" name="addContainer_toolButton">
@@ -215,25 +202,12 @@
              <item>
               <widget class="QLineEdit" name="package_lineEdit">
                <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
               </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_3">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>5</width>
-                 <height>15</height>
-                </size>
-               </property>
-              </spacer>
              </item>
              <item>
               <widget class="QToolButton" name="addPackage_toolButton">
@@ -313,25 +287,12 @@
                 <item>
                  <widget class="QLineEdit" name="primaryLabel_lineEdit">
                   <property name="sizePolicy">
-                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
                  </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_4">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>5</width>
-                    <height>15</height>
-                   </size>
-                  </property>
-                 </spacer>
                 </item>
                 <item>
                  <widget class="QToolButton" name="addPrimaryLabel_toolButton">
@@ -407,25 +368,12 @@
                 <item>
                  <widget class="QLineEdit" name="secondaryLabel_lineEdit">
                   <property name="sizePolicy">
-                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
                  </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_5">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>5</width>
-                    <height>15</height>
-                   </size>
-                  </property>
-                 </spacer>
                 </item>
                 <item>
                  <widget class="QToolButton" name="addSecondaryLabel_toolButton">
@@ -502,25 +450,12 @@
              <item>
               <widget class="QLineEdit" name="manufacturer_lineEdit">
                <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
               </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_6">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>5</width>
-                 <height>15</height>
-                </size>
-               </property>
-              </spacer>
              </item>
              <item>
               <widget class="QToolButton" name="addManufacturer_toolButton">
