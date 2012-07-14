@@ -25,7 +25,7 @@ The easiest way to build CO is by using QtCreator IDE. Download it and Qt 4.7.4 
 
 Depending on the OS used (Win, Linux, Mac OS), an OS-specific file is created under "_build/release/bin directory". For example, if you are on Windows a file named "comporg_win.exe" will be created. 
 
-If you don't want to install QtCreator and you are using Debian/Ubuntu, here are some tips:
+If you don't want to install QtCreator and you are using Debian/Ubuntu, follow these steps:
 
 	git clone https://github.com/3xdigital/Component-Organizer
 	cd Component-Organizer

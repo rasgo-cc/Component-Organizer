@@ -20,8 +20,8 @@ win32:TARGET = comporg_win
 unix:TARGET = comporg_unix
 TEMPLATE = app
 
-#DEFINES += QT_NO_DEBUG_OUTPUT
-#DEFINES += QT_NO_DEBUG
+DEFINES += QT_NO_DEBUG_OUTPUT
+DEFINES += QT_NO_DEBUG
 
 win32:RC_FILE = resources/app.rc
 
