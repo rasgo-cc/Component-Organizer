@@ -48,9 +48,17 @@ FreeBSD/PC-BSD
 - reqirements:
 
   - git (devel/git)
+  - GNU make (devel/gmake)
   - qt4 (devel/qt4)
   - qmake (devel/qmake4)
 
+- building CO:
+
+  1. git clone https://github.com/3xdigital/Component-Organizer
+  2. cd Component-Organizer
+  3. qmake-qt4 -project comporg.pro
+  4. qmake-qt4 -o makefile Component-Organizer.pro
+  5. gmake
 
 Using 
 =====
