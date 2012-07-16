@@ -6,12 +6,18 @@ Component Organizer (or CO for short) is a small, cross-platform and very easy t
 Official webpage: http://3xbla.wordpress.com/component-organizer/
 
 Building
-==========================
+========
 
-CO is C++ with Qt4. 
-The tools used for development:
-QtCreator (2.4.1)
-Qt (4.7.4)
+Requirements
+------------
+for building:
+
+- C++ compiler (e.g. gcc)
+- Qt4
+
+for development:
+- QtCreator (2.4.1)
+- Qt (4.7.4)
 
 The easiest way to build CO is by using QtCreator IDE. Download it and Qt 4.7.4 from Qt's website (http://qt.nokia.com/). Then:
 
@@ -25,6 +31,8 @@ The easiest way to build CO is by using QtCreator IDE. Download it and Qt 4.7.4 
 
 Depending on the OS used (Win, Linux, Mac OS), an OS-specific file is created under "_build/release/bin directory". For example, if you are on Windows a file named "comporg_win.exe" will be created. 
 
+Debian/Ubuntu
+-------------
 If you don't want to install QtCreator and you are using Debian/Ubuntu, follow these steps:
 
 	git clone https://github.com/3xdigital/Component-Organizer
@@ -35,12 +43,12 @@ If you don't want to install QtCreator and you are using Debian/Ubuntu, follow t
 	ls -al _build/release/bin/comporg_unix
 
 Using 
-==========================
+=====
 
 CO it's pretty straight forward to use. Just start by adding components through File>Add new...>Component. By right-clicking on the table you'll get a context menu with everything you need to manage your items.
 
 Contributing (!)
-==========================
+================
 
 Git is a wonderful thing. If you aren't familiar with it I would recomend you to google for some tutorials, there are several good ones out there. Then, fork/clone CO! Do whatever modifications you find useful, don't be afraid to scratch on it. The next step is to make a pull request. And that's it. Simple, isn't it?
 There are however some priorities in the CO's further development. See the wiki for more details.
