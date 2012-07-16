@@ -45,7 +45,7 @@ If you don't want to install QtCreator and you are using Debian/Ubuntu, follow t
 FreeBSD/PC-BSD
 --------------
 
-- reqirements:
+- requirements:
 
   - git (devel/git)
   - GNU make (devel/gmake)
