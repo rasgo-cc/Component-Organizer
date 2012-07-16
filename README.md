@@ -42,6 +42,16 @@ If you don't want to install QtCreator and you are using Debian/Ubuntu, follow t
 	make
 	ls -al _build/release/bin/comporg_unix
 
+FreeBSD/PC-BSD
+--------------
+
+- reqirements:
+
+  - git (devel/git)
+  - qt4 (devel/qt4)
+  - qmake (devel/qmake4)
+
+
 Using 
 =====
 
@@ -56,6 +66,6 @@ There are however some priorities in the CO's further development. See the wiki 
 Bug reports, suggestions and feature requests, please use the "Issues" tab. They are very welcomed!
 
 "Hacking"
-==========================
+=========
 
 CO uses a XML file to store data. You can find it on /data/data.xml. Open it with a text editor (I like Notepad++) to see how info is organized. This file means that you can edit your data directly and then reflect those changes on CO. For example, to add a new package you just have to add a line like this: <package name="mynewpackage"/> between the <packages> ... <packages/> tags. The same principle applies to everything else, you just have to understand how data is organized. However, you can also mess up all your data this way! Before make any changes make sure you backup data.xml. If you are not sure if you are doing things right just don't edit data.xml and use CO's interface.
