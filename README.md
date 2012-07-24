@@ -13,7 +13,7 @@ Requirements
 for building:
 
 - C++ compiler (e.g. [gcc](http://gcc.gnu.org/))
-- Qt4
+- [Qt4](http://www.qt-project.org/)
 
 for development:
 - QtCreator (2.4.1)
