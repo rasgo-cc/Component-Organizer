@@ -171,14 +171,21 @@ void CO::useDefaultData()
     top->addLeaf(new Label(tr("Battery Charger"), top));
     top->addLeaf(new Label(tr("LED Driver"), top));
     top->addLeaf(new Label(tr("Supply Protection"), top));
+    top->addLeaf(new Label(tr("Transformer"), top));
     m_topLabels.append(top);
 
     top = new Label(tr("Memory"));
     top->addLeaf(new Label(tr("EEPROM"), top));
     top->addLeaf(new Label(tr("SRAM"), top));
     top->addLeaf(new Label(tr("FLASH"), top));
-    top->addLeaf(new Label(tr("ROM"), top));
     m_topLabels.append(top);
+    
+    top = new Label(tr("Relay"));
+    top->addLeaf(new Label(tr("Power Relay"), top));
+    top->addLeaf(new Label(tr("Signal Relay"), top));
+    top->addLeaf(new Label(tr("Solid State"), top));
+    top->addLeaf(new Label(tr("High Frequency"), top));
+    top->addLeaf(new Label(tr("Analog Switch"), top));
     
     top = new Label(tr("Switch"));
     top->addLeaf(new Label(tr("Slide"), top));
