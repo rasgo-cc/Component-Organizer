@@ -187,6 +187,13 @@ void CO::useDefaultData()
     top->addLeaf(new Label(tr("Momentary Push"), top));
     top->addLeaf(new Label(tr("Push-lock"), top));
     m_topLabels.append(top);
+
+    top = new Label(tr("Connector"));
+    top->addLeaf(new Label(tr("I/O connector"), top));
+    top->addLeaf(new Label(tr("Power plug"), top));
+    top->addLeaf(new Label(tr("Ribbon"), top));
+    top->addLeaf(new Label(tr("Header"), top));
+    top->addLeaf(new Label(tr("Screw Terminal"), top));
 }
 
 void CO::addManufacturer(Manufacturer *manufacturer)
