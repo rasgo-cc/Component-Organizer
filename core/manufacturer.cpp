@@ -32,6 +32,7 @@ const QStringList Manufacturer::m_defaultNames =
      << "Coilcraft"
      << "Cree"
      << "Diodes Inc"
+     << "Epcos"
      << "Fairchild Semiconductor"
      << "Freescale"
      << "Infineon"
@@ -52,6 +53,7 @@ const QStringList Manufacturer::m_defaultNames =
      << "Texas Instruments"
      << "Roving Networks"
      << "Rubycon"
+     << "TDK"
      << "TE Connectivity"
      << "Toko"
      << "Samtec"
@@ -59,6 +61,7 @@ const QStringList Manufacturer::m_defaultNames =
      << "ST Microelectronics"
      << "Vishay"
      << "Wima"
+     << "Xicon"
      << "Xilinx"
     );
 
