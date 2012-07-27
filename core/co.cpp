@@ -103,6 +103,9 @@ void CO::useDefaultData()
     m_topLabels.append(top);
 
     top = new Label(tr("Inductor"));
+    top->addLeaf(new Label(tr("Common Inductor"), top));
+    top->addLeaf(new Label(tr("Power Inductor"), top));
+    top->addLeaf(new Label(tr("RF"), top));
     m_topLabels.append(top);
     
     top = new Label(tr("Optoelectronic"));
