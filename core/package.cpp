@@ -45,12 +45,17 @@ const QStringList Package::m_defaultNames =  //TODO sort the list
      << "LCC"
      << "LGA"
      << "BGA"
+     << "SM1"
      << "0402"
      << "0603"
      << "0805"
      << "1008"
      << "1206"
      << "1210"
+     << "1812"
+     << "2010"
+     << "2512"
+     
     );
 
 QStringList Package::defaultNames()
