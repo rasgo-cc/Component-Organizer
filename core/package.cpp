@@ -28,6 +28,7 @@ const QStringList Package::m_defaultNames =  //TODO sort the list
      << "1/2W"
      << "1W"
      << "PDIP"
+     << "TO"
      << "SMD"
      << "SOIC"
      << "DPAK"
