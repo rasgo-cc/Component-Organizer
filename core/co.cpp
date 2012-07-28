@@ -67,8 +67,11 @@ void CO::useDefaultData()
     top = new Label(tr("Diode"));
     top->addLeaf(new Label(tr("Fast Recovery"), top));
     top->addLeaf(new Label(tr("Zener"), top));
+    top->addLeaf(new Label(tr("Tunnel"), top));
     top->addLeaf(new Label(tr("Schottky"), top));
+    top->addLeaf(new Label(tr("Power diode"), top));
     top->addLeaf(new Label(tr("Bridge"), top));
+    top->addLeaf(new Label(tr("Diode Network"), top));
     top->addLeaf(new Label(tr("TRIAC"), top));
     top->addLeaf(new Label(tr("DIAC"), top));
     top->addLeaf(new Label(tr("Varicap"), top));
@@ -189,7 +192,8 @@ void CO::useDefaultData()
     top->addLeaf(new Label(tr("Solid State"), top));
     top->addLeaf(new Label(tr("High Frequency"), top));
     top->addLeaf(new Label(tr("Analog Switch"), top));
-    
+    m_topLabels.append(top);
+
     top = new Label(tr("Switch"));
     top->addLeaf(new Label(tr("Slide"), top));
     top->addLeaf(new Label(tr("Lever"), top));
@@ -204,6 +208,10 @@ void CO::useDefaultData()
     top->addLeaf(new Label(tr("Ribbon"), top));
     top->addLeaf(new Label(tr("Header"), top));
     top->addLeaf(new Label(tr("Screw Terminal"), top));
+    m_topLabels.append(top);
+
+    top = new Label(tr("Heatsink"));
+    m_topLabels.append(top);
 }
 
 void CO::addManufacturer(Manufacturer *manufacturer)
