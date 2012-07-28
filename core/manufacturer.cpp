@@ -22,6 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const QStringList Manufacturer::m_defaultNames =
     (QStringList()
+     << "Generic"
      << "Altera"
      << "Analog Devices"
      << "Atmel"
