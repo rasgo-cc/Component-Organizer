@@ -27,6 +27,7 @@ const QStringList Package::m_defaultNames =  //TODO sort the list
      << "1/4W"
      << "1/2W"
      << "1W"
+     << "DO"
      << "PDIP"
      << "TO"
      << "SMD"
