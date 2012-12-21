@@ -376,6 +376,8 @@ bool CO::removeFile(const QString &filePath)
 
 bool CO::writeXML(const QString &filePath)
 {
+    copyFile(filePath, filePath + ".bak");
+
     QFile file(filePath);
 
     if(!file.open(QIODevice::WriteOnly))
