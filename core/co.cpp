@@ -465,8 +465,9 @@ bool CO::writeXML(const QString &filePath)
         foreach(Datasheet *d, c->datasheets())
         {
             stream.writeStartElement("datasheet");
-            stream.writeAttribute("type", Datasheet::typeToString(d->type()));
-            if(d->manufacturer() != 0)
+            stream.writeAttribute("type", Datasheet::typeToString(d->type()));          
+
+            if(d->manufacturer() != 0 && d->manufacturer()->name() != "0") //TODO: error
                 stream.writeAttribute("manufacturer", d->manufacturer()->name());
             else
                 stream.writeAttribute("manufacturer", "");
