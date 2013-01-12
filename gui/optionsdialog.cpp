@@ -342,7 +342,12 @@ void OptionsDialog::addSecondaryLabelHandler()
 {
     QString name = ui->secondaryLabel_lineEdit->text();
 
-    if(m_co->findLabel(name) != 0)
+    int row = m_primaryLabelTable->currentRow();
+    QString topLabelName = m_primaryLabelTable->item(row,0)->text();
+    Label *topLabel = m_co->findTopLabel(topLabelName);
+    qDebug() << topLabel << (topLabel == 0);
+
+    if(m_co->findSecondaryLabel(topLabel,name) != 0)
     {
         QMessageBox::information(this,
                                  tr("Info"),
@@ -351,14 +356,10 @@ void OptionsDialog::addSecondaryLabelHandler()
         return;
     }
 
-    int row = m_secondaryLabelTable->rowCount();
+    row = m_secondaryLabelTable->rowCount();
     m_secondaryLabelTable->insertRow(row);
     m_secondaryLabelTable->addItem(row, 0, name);
 
-    row = m_primaryLabelTable->currentRow();
-    QString topLabelName = m_primaryLabelTable->item(row,0)->text();
-    Label *topLabel = m_co->findTopLabel(topLabelName);
-    qDebug() << topLabel << (topLabel == 0);
     Label *leaf = new Label(name, topLabel);
     topLabel->addLeaf(leaf);
 }

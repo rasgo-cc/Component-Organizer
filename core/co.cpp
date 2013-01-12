@@ -313,6 +313,18 @@ Label* CO::findLabel(const QString &name)
     return 0;
 }
 
+//TODO: add method
+Label* CO::findSecondaryLabel(Label *top, const QString &name)
+{
+    //sketch
+    foreach(Label *leaf, top->leafs()) {
+        if(leaf->name().compare(name) == 0)
+            return leaf;
+    }
+
+    return 0;
+}
+
 QStringList CO::componentNames()
 {
     QStringList list;
