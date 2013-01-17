@@ -68,6 +68,7 @@ public:
     Container* findContainer(const QString &name);
     Label* findTopLabel(const QString &name);
     Label* findLabel(const QString &name);
+    Label* findSecondaryLabel(Label *top, const QString &name);
 
     QStringList componentNames();
     QStringList appnoteNames();
