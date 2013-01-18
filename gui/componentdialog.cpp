@@ -531,7 +531,16 @@ void ComponentDialog::browseFile()
 void ComponentDialog::addDatasheetHandler() // TODO use addItem() instead of addDatasheet()
 {
     Datasheet *d = new Datasheet(ui->filePath_lineEdit->text());
-    Manufacturer *m = new Manufacturer(ui->manufacturer_comboBox->currentText());
+    Manufacturer *m;
+
+    QString manufacturerName;
+    manufacturerName = ui->manufacturer_comboBox->currentText();
+
+    // verify if a manufacturer name was selected not
+    if(manufacturerName != "")
+        m = new Manufacturer(ui->manufacturer_comboBox->currentText());
+    else
+        m = new Manufacturer("0");
 
     d->setType(Datasheet::typeFromString(ui->type_comboBox->currentText()));
     d->setManufacturer(m);

@@ -313,6 +313,18 @@ Label* CO::findLabel(const QString &name)
     return 0;
 }
 
+//TODO: add method
+Label* CO::findSecondaryLabel(Label *top, const QString &name)
+{
+    //sketch
+    foreach(Label *leaf, top->leafs()) {
+        if(leaf->name().compare(name) == 0)
+            return leaf;
+    }
+
+    return 0;
+}
+
 QStringList CO::componentNames()
 {
     QStringList list;
@@ -465,8 +477,9 @@ bool CO::writeXML(const QString &filePath)
         foreach(Datasheet *d, c->datasheets())
         {
             stream.writeStartElement("datasheet");
-            stream.writeAttribute("type", Datasheet::typeToString(d->type()));
-            if(d->manufacturer() != 0)
+            stream.writeAttribute("type", Datasheet::typeToString(d->type()));          
+
+            if(d->manufacturer() != 0 && d->manufacturer()->name() != "0") //TODO: error
                 stream.writeAttribute("manufacturer", d->manufacturer()->name());
             else
                 stream.writeAttribute("manufacturer", "");
