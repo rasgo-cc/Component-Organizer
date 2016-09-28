@@ -1,3 +1,9 @@
+## DEPRECATED!
+
+This is old stuff and not maintained anymore.
+
+If you are looking for a better alternative check this out: <a href="http://bomer.co" target="_blank">BOMER</a>
+
 Introduction
 ============
 
