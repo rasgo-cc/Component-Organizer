@@ -3,3 +3,5 @@ TESTE/
 _build/
 object_script.*
 *.pro.user
+.qmake.stash
+translog.*.log
