@@ -1,6 +1,6 @@
 /*********************************************************************
 Component Organizer
-Copyright (C) Mário Ribeiro (mario.ribas@gmail.com)
+Copyright (C) Mï¿½rio Ribeiro (mario.ribas@gmail.com)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -67,22 +67,70 @@ void CO::useDefaultData()
     top = new Label(tr("Diode"));
     top->addLeaf(new Label(tr("Fast Recovery"), top));
     top->addLeaf(new Label(tr("Zener"), top));
-    top->addLeaf(new Label(tr("LED"), top));
-    m_topLabels.append(top);
+    top->addLeaf(new Label(tr("Tunnel"), top));
+    top->addLeaf(new Label(tr("Schottky"), top));
+    top->addLeaf(new Label(tr("Power diode"), top));
+    top->addLeaf(new Label(tr("Bridge"), top));
+    top->addLeaf(new Label(tr("Diode Network"), top));
+    top->addLeaf(new Label(tr("TRIAC"), top));
+    top->addLeaf(new Label(tr("DIAC"), top));
+    top->addLeaf(new Label(tr("Varicap"), top));
+     m_topLabels.append(top);
 
     top = new Label(tr("Resistor"));
+    top->addLeaf(new Label(tr("Carbon Film"), top));
+    top->addLeaf(new Label(tr("Metal Film"), top));
+    top->addLeaf(new Label(tr("Potentiometer"), top));
+    top->addLeaf(new Label(tr("Adjustable"), top));
+    top->addLeaf(new Label(tr("Common Pin Network"), top));
+    top->addLeaf(new Label(tr("Isolated Network"), top));
+    top->addLeaf(new Label(tr("Varistor"), top));
     m_topLabels.append(top);
 
     top = new Label(tr("Capacitor"));
+    top->addLeaf(new Label(tr("Ceramic"), top));
+    top->addLeaf(new Label(tr("Electrolytic"), top));
+    top->addLeaf(new Label(tr("Aluminium Electrolytic"), top));
+    top->addLeaf(new Label(tr("Trimmer"), top));
+    top->addLeaf(new Label(tr("Multilayer"), top));
+    top->addLeaf(new Label(tr("Tantalum"), top));
+    top->addLeaf(new Label(tr("KP / MKP"), top));
+    top->addLeaf(new Label(tr("KC / MKC"), top));
+    top->addLeaf(new Label(tr("KS / MKS"), top));
+    top->addLeaf(new Label(tr("MKV"), top));
+    top->addLeaf(new Label(tr("MKT"), top));
+    top->addLeaf(new Label(tr("Mica"), top));
+    top->addLeaf(new Label(tr("Glass"), top));
+    top->addLeaf(new Label(tr("Paper"), top));
+    top->addLeaf(new Label(tr("Metalized Paper"), top));
     m_topLabels.append(top);
 
     top = new Label(tr("Inductor"));
+    top->addLeaf(new Label(tr("Common Inductor"), top));
+    top->addLeaf(new Label(tr("Power Inductor"), top));
+    top->addLeaf(new Label(tr("RF"), top));
     m_topLabels.append(top);
-
+    
+    top = new Label(tr("Optoelectronic"));
+    top->addLeaf(new Label(tr("lamp"), top));
+    top->addLeaf(new Label(tr("LED"), top));
+    top->addLeaf(new Label(tr("Laser"), top));
+    top->addLeaf(new Label(tr("Optocoupler"), top));
+    m_topLabels.append(top);
+    
+    top = new Label(tr("Display"));
+    top->addLeaf(new Label(tr("OLED"), top));
+    top->addLeaf(new Label(tr("LCD"), top));
+    top->addLeaf(new Label(tr("7-Segment"), top));
+    top->addLeaf(new Label(tr("Bar graph"), top));
+    m_topLabels.append(top);
+    
     top = new Label(tr("Microcontroller"));
     top->addLeaf(new Label(tr("PIC"), top));
     top->addLeaf(new Label(tr("ATmega"), top));
+    top->addLeaf(new Label(tr("ATtiny"), top));
     top->addLeaf(new Label(tr("MSP430"), top));
+    top->addLeaf(new Label(tr("ARM"), top));
     m_topLabels.append(top);
 
     top = new Label(tr("Sensor"));
@@ -99,20 +147,70 @@ void CO::useDefaultData()
     top->addLeaf(new Label(tr("A/D"), top));
     top->addLeaf(new Label(tr("D/A"), top));
     m_topLabels.append(top);
+    
+    top = new Label(tr("Signal Conditioner"));
+    top->addLeaf(new Label(tr("Op. Amp."), top));
+    top->addLeaf(new Label(tr("Comparator"), top));
+    top->addLeaf(new Label(tr("Filter"), top));
+    top->addLeaf(new Label(tr("Voltage Ref"), top));
+    top->addLeaf(new Label(tr("RMS-DC Converter"), top));
+    m_topLabels.append(top);
 
     top = new Label(tr("Interface"));
     top->addLeaf(new Label(tr("USB"), top));
+    top->addLeaf(new Label(tr("Firewire"), top));
+    top->addLeaf(new Label(tr("RS232"), top));
     top->addLeaf(new Label(tr("I2C"), top));
+    top->addLeaf(new Label(tr("1-Wire"), top));
+    top->addLeaf(new Label(tr("SPI"), top));
+    top->addLeaf(new Label(tr("TWI"), top));
+    top->addLeaf(new Label(tr("SIM"), top));
+    top->addLeaf(new Label(tr("CAN"), top));
+    top->addLeaf(new Label(tr("Wireless/RF"), top));
     m_topLabels.append(top);
 
     top = new Label(tr("Supply"));
     top->addLeaf(new Label(tr("LDO")));
     top->addLeaf(new Label(tr("Buck-Boost")));
+    top->addLeaf(new Label(tr("Buck"), top));
+    top->addLeaf(new Label(tr("Boost"), top));
+    top->addLeaf(new Label(tr("Battery Charger"), top));
+    top->addLeaf(new Label(tr("LED Driver"), top));
+    top->addLeaf(new Label(tr("Supply Protection"), top));
+    top->addLeaf(new Label(tr("Transformer"), top));
     m_topLabels.append(top);
 
     top = new Label(tr("Memory"));
     top->addLeaf(new Label(tr("EEPROM"), top));
     top->addLeaf(new Label(tr("SRAM"), top));
+    top->addLeaf(new Label(tr("FLASH"), top));
+    m_topLabels.append(top);
+    
+    top = new Label(tr("Relay"));
+    top->addLeaf(new Label(tr("Power Relay"), top));
+    top->addLeaf(new Label(tr("Signal Relay"), top));
+    top->addLeaf(new Label(tr("Solid State"), top));
+    top->addLeaf(new Label(tr("High Frequency"), top));
+    top->addLeaf(new Label(tr("Analog Switch"), top));
+    m_topLabels.append(top);
+
+    top = new Label(tr("Switch"));
+    top->addLeaf(new Label(tr("Slide"), top));
+    top->addLeaf(new Label(tr("Lever"), top));
+    top->addLeaf(new Label(tr("Rocker"), top));
+    top->addLeaf(new Label(tr("Momentary Push"), top));
+    top->addLeaf(new Label(tr("Push-lock"), top));
+    m_topLabels.append(top);
+
+    top = new Label(tr("Connector"));
+    top->addLeaf(new Label(tr("I/O connector"), top));
+    top->addLeaf(new Label(tr("Power plug"), top));
+    top->addLeaf(new Label(tr("Ribbon"), top));
+    top->addLeaf(new Label(tr("Header"), top));
+    top->addLeaf(new Label(tr("Screw Terminal"), top));
+    m_topLabels.append(top);
+
+    top = new Label(tr("Heatsink"));
     m_topLabels.append(top);
 }
 

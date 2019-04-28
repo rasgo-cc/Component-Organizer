@@ -1,6 +1,6 @@
 /*********************************************************************
 Component Organizer
-Copyright (C) Mário Ribeiro (mario.ribas@gmail.com)
+Copyright (C) Mï¿½rio Ribeiro (mario.ribas@gmail.com)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -23,12 +23,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 const QStringList Package::m_defaultNames =  //TODO sort the list
     (QStringList()
      << "TH"
-     << "SMD"
+     << "1/8W"
+     << "1/4W"
+     << "1/2W"
+     << "1W"
+     << "DO"
      << "PDIP"
+     << "TO"
+     << "SMD"
      << "SOIC"
+     << "DPAK"
      << "SOT"
      << "SSOP"
      << "TSOP"
+     << "ÂµMAX"
      << "TQFP"
      << "DFN"
      << "QFN"
@@ -37,10 +45,17 @@ const QStringList Package::m_defaultNames =  //TODO sort the list
      << "LCC"
      << "LGA"
      << "BGA"
+     << "SM1"
      << "0402"
      << "0603"
      << "0805"
+     << "1008"
      << "1206"
+     << "1210"
+     << "1812"
+     << "2010"
+     << "2512"
+     
     );
 
 QStringList Package::defaultNames()

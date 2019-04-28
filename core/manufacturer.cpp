@@ -1,6 +1,6 @@
 /*********************************************************************
 Component Organizer
-Copyright (C) Mário Ribeiro (mario.ribas@gmail.com)
+Copyright (C) Mï¿½rio Ribeiro (mario.ribas@gmail.com)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -22,28 +22,51 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const QStringList Manufacturer::m_defaultNames =
     (QStringList()
+     << "Generic"
      << "Altera"
      << "Analog Devices"
      << "Atmel"
      << "Avago Technologies"
+     << "AVX"
+     << "Bourns"
      << "Burr-Brown"
+     << "Coilcraft"
+     << "Cree"
+     << "Cypress"
+     << "Diodes Inc"
+     << "Epcos"
      << "Fairchild Semiconductor"
+     << "FTD"
      << "Freescale"
      << "Infineon"
      << "Intersil"
      << "Lattice Semiconductor"
      << "Linear Technology"
      << "Maxim"
+     << "Microchip"
+     << "Motorola"
+     << "Murata"
      << "National Semiconductor"
      << "NXP"
+     << "Omron"
      << "ON Semiconductor"
+     << "Osram"
+     << "Panasonic"
      << "Philips"
-     << "Microchip"
      << "Texas Instruments"
+     << "Ramtron"
      << "Roving Networks"
-     << "TE Connectivity"
+     << "Rubycon"
+     << "Samtec"
+     << "Sanyo"
      << "ST Microelectronics"
+     << "TDK"
+     << "TE Connectivity"
+     << "Texas Instruments"
+     << "Toko"
      << "Vishay"
+     << "Wima"
+     << "Xicon"
      << "Xilinx"
     );
 
