@@ -382,8 +382,8 @@ bool CO::copyFile(const QString &filePath, const QString &newPath)
 bool CO::removeFile(const QString &filePath)
 {
     qDebug() << "remove" << filePath;
-    //return QFile::remove(filePath);
-    return true;
+    return QFile::remove(filePath);
+//    return true;
 }
 
 bool CO::writeXML(const QString &filePath)
